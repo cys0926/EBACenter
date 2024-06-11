@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import HeadMeta from "../../src/components/common/Layout/HeadMeta";
 
 function Mou_list() {

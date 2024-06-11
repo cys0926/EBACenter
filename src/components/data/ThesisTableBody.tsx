@@ -48,7 +48,7 @@ export default function ThesisTableBody() {
                                 }}
                                 // as로 바뀌면서 새로고침하는 경우 쿼리 값이 사라지는 현상 => ssr?
                                 as={`/data/${"thesis"}${No}`}
-                            >
+                                legacyBehavior>
                                 <td className='cursor-pointer py-3 px-2 text-left hover:scale-105 '>
                                     <a className='font-bold'>{data.title}</a>
                                 </td>

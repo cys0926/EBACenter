@@ -45,7 +45,7 @@ function SideBarMenu({ subMenu }: Props) {
                     )}
                 </div>
             ) : (
-                <Link href={subMenu.href}>
+                <Link href={subMenu.href} legacyBehavior>
                     {language ? (
                         <div className='flex h-14 cursor-pointer items-center justify-between px-3 font-semibold transition transition-colors hover:bg-PRIMARY_COLOR-50'>
                             {subMenu.title_EN}
@@ -65,7 +65,7 @@ function SideBarMenu({ subMenu }: Props) {
                 <>
                     <ul className='flex flex-col gap-y-2 bg-white p-5 text-sm font-semibold text-GRAY_COLOR-500'>
                         {subMenu.subMenu.map((subMenu, index) => (
-                            <Link key={index} href={subMenu.href}>
+                            <Link key={index} href={subMenu.href} legacyBehavior>
                                 {language ? (
                                     <li className="cursor-pointer before:mr-2 before:content-['\2022'] hover:text-PRIMARY_COLOR-500">
                                         {subMenu.title_EN}

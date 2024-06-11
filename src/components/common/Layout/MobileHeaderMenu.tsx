@@ -27,7 +27,7 @@ function MobileHeaderMenu({ subMap }: Props) {
     return (
         <div ref={menuRef}>
             <div className='flex items-center justify-between  border-b px-6 text-base font-semibold hover:text-PRIMARY_COLOR-500'>
-                <Link href={subMap.subMenu[0].href}>
+                <Link href={subMap.subMenu[0].href} legacyBehavior>
                     <div className='group relative flex h-full cursor-pointer items-center py-4  pr-12 text-lg'>
                         {subMap.title_KO}
                     </div>
@@ -45,7 +45,7 @@ function MobileHeaderMenu({ subMap }: Props) {
                 }`}
             >
                 {subMap.subMenu.map((item, index) => (
-                    <Link key={index} href={item.href}>
+                    <Link key={index} href={item.href} legacyBehavior>
                         <h1 className='flex w-full cursor-pointer justify-between p-3 hover:font-semibold hover:text-PRIMARY_COLOR-500'>
                             <span className=''>{item.title_KO}</span>
                         </h1>

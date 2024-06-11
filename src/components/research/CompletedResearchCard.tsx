@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import moment from "moment";
 import { Project } from "../../../typing";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import useAuth from "../../hooks/useAuth";
 import { ProjectContext } from "../../../pages/research/business";
 

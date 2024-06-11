@@ -72,7 +72,7 @@ function MaterialTableBody<M extends StudyMaterial | PaperMaterial>({
                                         },
                                     }}
                                     as={`/notice/${material}${No}`}
-                                >
+                                    legacyBehavior>
                                     <td className='cursor-pointer text-center hover:scale-105'>
                                         <a className='font-bold'>
                                             {data.title}

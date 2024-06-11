@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/legacy/image";
 
 interface Props {
     image: StaticImageData;

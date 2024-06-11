@@ -1,5 +1,5 @@
 import Head from "next/head"
-import logo from "public/images/logo/logo(H)_symbol_text_tag(EN)_w.svg"
+import logo from "../../../../public/images/logo/logo(H)_symbol_text_tag(EN)_w.svg"
 
 interface Props{
     title:string,

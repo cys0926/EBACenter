@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { BuildingOfficeIcon } from "@heroicons/react/24/solid";
 import { TruckIcon } from "@heroicons/react/24/solid";
 import LocationBox from "../../src/components/location/location_box";

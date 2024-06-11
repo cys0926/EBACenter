@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { QueryDocumentSnapshot } from "@firebase/firestore";
 import { Card, GalleryCard } from "../../../typing";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import useAuth from "../../hooks/useAuth";
 import { GalleryDeleteButton, GalleryUpdateButton } from "./GalleryButton";
 import { GalleryContext } from "./GalleryMain";

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import useAuth from "../../hooks/useAuth";
 import { ReportContext } from "./Report";
 import { ReportDeleteButton, ReportUpdateButton } from "./ReportButtons";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function ReportItem() {
     const { researchList, pageNumber } = useContext(ReportContext);

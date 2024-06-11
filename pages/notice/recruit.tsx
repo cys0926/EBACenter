@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { pdfjs } from "react-pdf";
 import HeadMeta from "../../src/components/common/Layout/HeadMeta";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import RecruitImg from "../../public/images/recruit.png";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;

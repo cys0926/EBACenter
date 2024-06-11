@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/legacy/image";
 import symbolImage from "../../../public/images/logo/symbol_outline.png";
 import logo_EN from "../../../public/images/logo/logo_EN.png";
-import centerLeaderImage from "../../../public/images/centerLeader.png";
+import viceCenterLeaderImage from "../../../public/images/vice-center-leader.png";
 import { useTranslation } from "next-i18next";
 
 function CenterLeaderInfo() {
@@ -12,7 +12,7 @@ function CenterLeaderInfo() {
       {/*교수님이미지*/}
       <div className='relative flex justify-center sm:absolute sm:right-0 sm:z-20 sm:max-h-full sm:w-[40%] md:w-[35%] lg:w-1/2'>
         <Image
-          src={centerLeaderImage}
+          src={viceCenterLeaderImage}
           objectPosition='bottom'
           objectFit='contain'
           alt='센터장'
@@ -31,24 +31,24 @@ function CenterLeaderInfo() {
           <ul className='flex flex-col  justify-around py-3 px-2 text-xs text-white xs:px-4 xs:text-sm sm:py-5 md:px-6 md:text-base xl:px-9'>
             <li className='flex'>
               <div className='w-20 xs:w-24 xl:w-32'>
-                {t(`centerLeaderInfo.centerLeader`)}
+                {t(`viceCenterLeaderInfo.viceCenterLeader`)}
               </div>
               <div className='whitespace-nowrap'>
-                {t(`centerLeaderInfo.name`)}
+                {t(`viceCenterLeaderInfo.name`)}
               </div>
             </li>
             <li className='flex'>
               <div className='w-20 xs:w-24 xl:w-32'>
-                {t(`centerLeaderInfo.affiliation`)}
+                {t(`viceCenterLeaderInfo.affiliation`)}
               </div>
               <div className='whitespace-nowrap'>
-                {t(`centerLeaderInfo.affiliation_now`)}
+                {t(`viceCenterLeaderInfo.affiliation_now`)}
               </div>
             </li>
             <li className='flex'>
               <div className='w-20 xs:w-24 xl:w-32'>E-mail</div>
-              <a className='whitespace-nowrap' href='mailto:yong21c@gmail.com'>
-                yong21c @ gmail.com
+              <a className='whitespace-nowrap' href='mailto:hlim@inha.ac.kr'>
+                hlim@inha.ac.kr
               </a>
             </li>
           </ul>

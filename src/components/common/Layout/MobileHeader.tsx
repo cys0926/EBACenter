@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import logo_text_tag from "/public/images/logo/logo_text_tag_EN.png";
 import { ChevronDownIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { data, info, major, notice, research } from "../../../utils/Utils";

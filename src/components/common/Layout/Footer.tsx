@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import logo_text_KR from "../../../../public/images/logo/logo_text_KR.png";
 import logo_symbol_text_KR from "../../../../public/images/logo/logo_symbol_text_KR.png";

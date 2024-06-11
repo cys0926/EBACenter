@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ArrowDownTrayIcon, NewspaperIcon } from "@heroicons/react/24/outline";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { ResearchReport } from "../../../typing";
 import Link from "next/link";
 
@@ -19,7 +19,7 @@ export default function ReportCard({ report, index }: Props) {
             } ${index < 3 && "md:flex"}
             2xl:flex`}
         >
-            <Link href='/data/paper?tab=report'>
+            <Link href='/data/paper?tab=report' legacyBehavior>
                 <div className='relative aspect-[1/1.414] w-full cursor-pointer border bg-gray-300 shadow-lg before:float-left before:pt-[141.4%] hover:scale-105'>
                     <Image src={report.imgUrl} height={200} layout='fill' />
                 </div>

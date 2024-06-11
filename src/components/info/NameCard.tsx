@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import useAuth from "../../hooks/useAuth";
 import { GraduateMember, InternalMember } from "../../../typing";
 import { MemberDeleteButton, MemberUpdateButton } from "./MemberButton";

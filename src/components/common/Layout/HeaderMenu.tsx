@@ -3,7 +3,7 @@ import Link from "next/link";
 import { MinusIcon } from "@heroicons/react/24/solid";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import { SubMap } from "../../../../typing";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import logo_white from "../../../../public/images/logo/logo_white.png";
 import {useRecoilValue, useSetRecoilState} from "recoil";
 import {languageState} from "../../../atoms/languageAtom";
@@ -32,7 +32,7 @@ function HeaderMenu({ subMap }: Props) {
         <div className='h-full'>
             {/*1st depth*/}
             <div className='flex h-full items-center text-lg font-semibold hover:text-PRIMARY_COLOR-500 xl:text-xl'>
-                <Link href={subMap.subMenu[0].href}>
+                <Link href={subMap.subMenu[0].href} legacyBehavior>
                     {language ? (
                         <div
                             onMouseOver={showMenu}
@@ -97,7 +97,7 @@ function HeaderMenu({ subMap }: Props) {
                             key={index}
                             className='text-sm xl:text-base'
                         >
-                            <Link href={item.href}>
+                            <Link href={item.href} legacyBehavior>
                                 <h1 className='z-20 flex w-full cursor-pointer justify-between border p-3 shadow-lg hover:scale-105 hover:font-semibold hover:text-PRIMARY_COLOR-500'>
                                     {language ? (
                                         <span onClick={closeMenu} className=''>
@@ -122,7 +122,7 @@ function HeaderMenu({ subMap }: Props) {
                                         className=" py-1 xl:px-4 pl-3 before:mr-2 before:text-PRIMARY_COLOR-500  before:content-['\2022'] xl:py-2"
                                         key={index}
                                     >
-                                        <Link href={subMenu.href}>
+                                        <Link href={subMenu.href} legacyBehavior>
                                             {language ? (
                                                 <span
                                                     className='cursor-pointer hover:font-semibold hover:text-PRIMARY_COLOR-500'

@@ -9,21 +9,19 @@ interface Props {
 }
 
 function PageTitleComponent({ title, active, href }: Props) {
-    return (
-        <>
-            <ChevronDoubleRightIcon className='h-4' />
-            <Link href={href}>
-                <span
-                    className={`${
-                        active &&
-                        "font-bold text-PRIMARY_COLOR-500 underline underline-offset-8"
-                    } cursor-pointer whitespace-nowrap`}
-                >
-                    {title}
-                </span>
-            </Link>
-        </>
-    );
+    return <>
+        <ChevronDoubleRightIcon className='h-4' />
+        <Link href={href} legacyBehavior>
+            <span
+                className={`${
+                    active &&
+                    "font-bold text-PRIMARY_COLOR-500 underline underline-offset-8"
+                } cursor-pointer whitespace-nowrap`}
+            >
+                {title}
+            </span>
+        </Link>
+    </>;
 }
 
 export default PageTitleComponent;

@@ -47,6 +47,7 @@ function NewsTableBody<N extends CenterNews | EventNews>({
                             <td className='text-center'>{No}</td>
 
                             <Link
+                                // as={`/notice/${news}${index + 1}`}
                                 href={{
                                     pathname: `/notice/${news}${No}`,
                                     query: {
@@ -60,9 +61,7 @@ function NewsTableBody<N extends CenterNews | EventNews>({
                                         content: data.content,
                                     },
                                 }}
-
-                                // as={`/notice/${news}${index + 1}`}
-                            >
+                                legacyBehavior>
                                 <td className='cursor-pointer text-center hover:scale-105'>
                                     {" "}
                                     <a className='font-bold'>{data.title}</a>

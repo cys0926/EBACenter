@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useRouter } from "next/router";
 import OrganizationCard from "../../../src/components/info/OrganizatinoCard";
 import sym_logo_EN from "../../../public/images/logo/sym_logo_EN.png";

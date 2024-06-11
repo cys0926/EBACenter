@@ -8,7 +8,7 @@ import { collection, doc } from "@firebase/firestore";
 import { db, storage } from "../../../firebase";
 import { getDownloadURL, ref, uploadBytesResumable } from "@firebase/storage";
 import { Card } from "../../../typing";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { GalleryCancelButton } from "./GalleryButton";
 import { GalleryContext } from "./GalleryMain";
 import moment from "moment";

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import Link from "next/link";
 import RecruitImg from "../../../public/images/recruit.png";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -52,7 +52,7 @@ function MainNewsRecruit({ title, href }: Props) {
   }
 
   return (
-    <Link href={href}>
+    <Link href={href} legacyBehavior>
       <div className='group flex max-h-[450px] min-h-[310px] w-full cursor-pointer flex-col gap-y-3 rounded-tr-3xl rounded-bl-3xl bg-GRAY_COLOR-200 px-7 py-7 transition-colors duration-[350ms] ease-in-out hover:bg-PRIMARY_COLOR-400 lg:w-auto lg:flex-1'>
         <div className='text-xl font-black text-PRIMARY_COLOR-700 group-hover:text-white'>
           {title}

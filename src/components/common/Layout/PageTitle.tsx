@@ -53,10 +53,10 @@ function PageTitle() {
                 {/*</h3>*/}
             </div>
             <div className='flex items-center gap-x-1 border-y py-3 text-xs xs:text-sm sm:gap-x-2 sm:text-base md:gap-x-3 md:text-lg '>
-                <Link href='/'>
+                <Link href='/' legacyBehavior>
                     <HomeIcon className='h-4 cursor-pointer text-PRIMARY_COLOR-500' />
                 </Link>
-                <Link href='/'>
+                <Link href='/' legacyBehavior>
                     <span className='cursor-pointer'>HOME</span>
                 </Link>
 

@@ -8,7 +8,7 @@ import { getDownloadURL, ref, uploadBytesResumable } from "@firebase/storage";
 import { db, storage } from "../../../firebase";
 import { useFirestoreDocumentMutation } from "@react-query-firebase/firestore";
 import { collection, doc } from "@firebase/firestore";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 interface Props {
     docID: string;

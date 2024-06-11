@@ -1,7 +1,7 @@
 import React from "react";
 
 import visionImage from "../../public/images/visionImage.png";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import HeadMeta from "../../src/components/common/Layout/HeadMeta";
 
 function Center_vision() {

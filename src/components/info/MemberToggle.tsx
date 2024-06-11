@@ -7,7 +7,7 @@ import {
 } from "@react-query-firebase/firestore";
 import { getDownloadURL, ref, uploadBytesResumable } from "@firebase/storage";
 import { db, storage } from "../../../firebase";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { Course, Team } from "../../../typing";
 import { MemberListContext } from "../common/MemberList";
 import { MemberCancelButton } from "./MemberButton";

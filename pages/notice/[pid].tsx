@@ -1,6 +1,6 @@
 import Router, { useRouter, withRouter } from "next/router";
 import { ImFileText2 } from "react-icons/im";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { query } from "firebase/firestore";
 import HeadMeta from "../../src/components/common/Layout/HeadMeta";
 
