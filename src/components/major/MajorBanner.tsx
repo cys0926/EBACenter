@@ -14,8 +14,6 @@ function MajorBanner({ title, image }: Props) {
                 {/*로고 사이즈*/}
                 <div className='relative -z-10 flex h-full w-full'>
                     <Image
-                        width=''
-                        height=''
                         src={image}
                         objectFit='cover'
                         alt='로고'
